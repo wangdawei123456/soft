@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<script type="text/javascript">
+    
+    var name = "The Window";
+    var object = {        
+        name: "My Object",
+        getNameFunc: function () {
+            return function () {
+                var that = this;
+                return that.name;
+            };
+        }
+    };
+
+    alert(object.getNameFunc()());
+    
+
+    //var name = "The Window";
+    //var object = {
+    //    name: "My Object",
+    //    getNameFunc: function () {
+    //        var that = this;
+    //        return function () {
+    //            return that.name;
+    //        };
+    //    }
+    //};
+    //alert(object.getNameFunc()());
+</script>
